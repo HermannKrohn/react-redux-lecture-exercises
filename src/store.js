@@ -7,8 +7,7 @@ const initialState = {
 const reducer = ( state, action ) => {
     switch(action.type){
         case 'INCREMENT_COUNT':
-            state.counter = state.counter + 1
-            return state
+            return ({...state, count: state.count+1})
         break;
     }
     return state
